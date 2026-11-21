@@ -1,0 +1,59 @@
+{
+  "updated": "Nov 21, 2026 (sample data)",
+  "deals": [
+    { "id": "mcd-5meal", "chain": "mcdonalds", "title": "$5 Meal Deal", "details": "McDouble or McChicken, 4 pc McNuggets, small fries and a small drink.", "price": "$5" },
+    { "id": "mcd-bogo", "chain": "mcdonalds", "title": "Buy one, get one for $1", "details": "Big Mac, Quarter Pounder or 10 pc McNuggets. Check Deals in the app.", "price": "BOGO", "appOnly": true },
+    { "id": "mcd-friesfri", "chain": "mcdonalds", "title": "Free Fries Friday", "details": "Free medium fries with any $1+ purchase.", "price": "FREE", "days": [6], "appOnly": true },
+
+    { "id": "wen-biggie", "chain": "wendys", "title": "Biggie Bag", "details": "Jr. Bacon Cheeseburger or Crispy Chicken, 4 pc nuggets, small fries and a drink.", "price": "$5" },
+    { "id": "wen-breakfast", "chain": "wendys", "title": "$3 Breakfast Deal", "details": "Breakfast sandwich and seasoned potatoes, before 10:30 am.", "price": "$3" },
+    { "id": "wen-frosty", "chain": "wendys", "title": "Weekend $1 Frosty", "details": "Any size Frosty for a buck with an app order.", "price": "$1", "days": [6, 7, 1], "appOnly": true },
+
+    { "id": "bk-yourway", "chain": "burgerking", "title": "$5 Your Way Meal", "details": "Whopper Jr., Chicken Jr. or Bacon Cheeseburger with nuggets, fries and a drink.", "price": "$5" },
+    { "id": "bk-whopperwed", "chain": "burgerking", "title": "Whopper Wednesday", "details": "Whopper for $3 with any purchase.", "price": "$3", "days": [4], "appOnly": true },
+    { "id": "bk-sundaybogo", "chain": "burgerking", "title": "Sunday Whopper BOGO", "details": "Buy a Whopper, get a second one free.", "price": "BOGO", "days": [1], "appOnly": true },
+
+    { "id": "jitb-tacos", "chain": "jackinthebox", "title": "2 Tacos", "details": "The legendary crunchy tacos, all day.", "price": "$0.99" },
+    { "id": "jitb-munchie", "chain": "jackinthebox", "title": "Munchie Meal", "details": "Late-night combo with a sandwich, fries, 2 tacos and a drink. After 9 pm.", "price": "$6.99" },
+    { "id": "jitb-jumbo", "chain": "jackinthebox", "title": "Jumbo Jack Saturday", "details": "Jumbo Jack combo at a weekend price.", "price": "$5", "days": [7], "appOnly": true },
+
+    { "id": "arb-snack", "chain": "arbys", "title": "2 for $7 Classics", "details": "Mix and match Classic Beef 'n Cheddar or Classic Roast Beef.", "price": "2/$7" },
+    { "id": "arb-fries", "chain": "arbys", "title": "Free Curly Fries", "details": "Free small curly fries with any sandwich purchase.", "price": "FREE", "days": [1], "appOnly": true },
+
+    { "id": "tb-cravings", "chain": "tacobell", "title": "Cravings Value Menu", "details": "Over 10 items at $3 or less, including the Cheesy Roll Up and Beefy 5-Layer.", "price": "≤$3" },
+    { "id": "tb-luxe", "chain": "tacobell", "title": "Luxe Cravings Box", "details": "Chalupa, Beefy 5-Layer, Crunchy Taco, Chips & Nacho Cheese and a drink.", "price": "$7" },
+    { "id": "tb-tuesday", "chain": "tacobell", "title": "Taco Tuesday", "details": "Crunchy or soft tacos for $1 each.", "price": "$1", "days": [3] },
+
+    { "id": "pop-bigbox", "chain": "popeyes", "title": "$6 Big Box", "details": "2 pc chicken or 3 tenders with 2 regular sides and a biscuit.", "price": "$6" },
+    { "id": "pop-tuesday", "chain": "popeyes", "title": "2 pc Tuesday", "details": "2 pc signature chicken for a steal.", "price": "$2.99", "days": [3], "appOnly": true },
+
+    { "id": "kfc-box", "chain": "kfc", "title": "$5 Chicken Sandwich Box", "details": "Chicken sandwich, side and a drink.", "price": "$5" },
+    { "id": "kfc-bucket", "chain": "kfc", "title": "Sunday Family Bucket", "details": "8 pc bucket with 2 large sides and 4 biscuits.", "price": "$20", "days": [1] },
+
+    { "id": "son-happyhour", "chain": "sonic", "title": "Happy Hour", "details": "Half-price drinks and slushes, 2 – 4 pm.", "price": "½ OFF" },
+    { "id": "son-corndog", "chain": "sonic", "title": "Corn Dog Night", "details": "Corn dogs for 50¢ after 5 pm.", "price": "$0.50", "days": [7] },
+
+    { "id": "cfa-rewards", "chain": "chickfila", "title": "Free item rewards", "details": "Earn points on every order; check Rewards for free nuggets or a drink.", "price": "PTS", "appOnly": true },
+
+    { "id": "dq-meal", "chain": "dairyqueen", "title": "$7 Meal Deal", "details": "Burger or 4 pc chicken strips, fries, a drink and a sundae.", "price": "$7" },
+    { "id": "dq-blizzard", "chain": "dairyqueen", "title": "Blizzard BOGO for 99¢", "details": "Buy any Blizzard, get a second for 99¢.", "price": "$0.99", "days": [2], "appOnly": true },
+
+    { "id": "wb-whatameal", "chain": "whataburger", "title": "Whatameal Deal", "details": "Jr. burger, small fries and a drink.", "price": "$5.99" },
+
+    { "id": "cjr-bigdeal", "chain": "carlsjr", "title": "Big Deal", "details": "2 Famous Stars or Big Hamburgers.", "price": "2/$6" },
+    { "id": "har-bigdeal", "chain": "hardees", "title": "Big Deal", "details": "2 Famous Stars or Big Hamburgers.", "price": "2/$6" },
+
+    { "id": "sub-footlong", "chain": "subway", "title": "$6.99 Footlong", "details": "Select footlongs with promo code in the app.", "price": "$6.99", "appOnly": true },
+
+    { "id": "dom-mixmatch", "chain": "dominos", "title": "Mix & Match", "details": "Any 2 or more: medium 2-topping pizza, wings, pasta, sandwiches and more.", "price": "$6.99" },
+    { "id": "dom-carryout", "chain": "dominos", "title": "Carryout Large", "details": "Large 3-topping pizza, carryout only.", "price": "$7.99" },
+
+    { "id": "ph-dealmenu", "chain": "pizzahut", "title": "Deal Lover's Menu", "details": "Pick from medium pizzas, wings, pasta and sides.", "price": "$7" },
+
+    { "id": "lc-classic", "chain": "littlecaesars", "title": "Hot-N-Ready Classic", "details": "Large pepperoni or cheese, ready when you walk in.", "price": "$6.99" },
+
+    { "id": "dt-dollar", "chain": "deltaco", "title": "Del's Dollar Deals", "details": "Tacos, bean & cheese burritos and more for $1–2.", "price": "$1+" },
+
+    { "id": "ws-wingwed", "chain": "wingstop", "title": "Wing Wednesday", "details": "Boneless wings at a discount when you order online.", "price": "75¢", "days": [4], "appOnly": true }
+  ]
+}
