@@ -18,13 +18,15 @@ Edit the file here (on GitHub: open it, click the pencil, commit). Phones pick u
       "days": [6],
       "appOnly": true,
       "starts": "2026-11-01",
-      "ends": "2026-11-30"
+      "ends": "2026-11-30",
+      "allergens": ["wheat", "milk"]
     }
   ]
 }
 ```
 
-- `chain`: one of `mcdonalds`, `wendys`, `burgerking`, `jackinthebox`, `arbys`, `tacobell`, `popeyes`, `kfc`, `sonic`, `chickfila`, `dairyqueen`, `whataburger`, `carlsjr`, `hardees`, `subway`, `dominos`, `pizzahut`, `littlecaesars`, `deltaco`, `wingstop`.
+- `chain`: a chain id from `Chain.all` in the app (e.g. `mcdonalds`, `chipotle`, `pandaexpress`, `cava`). Deals for unknown chains are ignored.
+- `allergens` (optional): any of `milk`, `egg`, `wheat`, `soy`, `peanut`, `treenut`, `fish`, `shellfish`, `sesame`. Use `[]` for none. Leave it out if unknown; people with allergies set will not see that deal.
 - `days` (optional): weekdays the deal runs, 1 = Sunday … 7 = Saturday. Leave out for every day.
 - `price`, `appOnly`, `starts`, `ends`: optional. Dates are `yyyy-MM-dd`.
 - If the file has a JSON mistake, the app keeps using the last good copy.
