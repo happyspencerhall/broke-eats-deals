@@ -1,59 +1,103 @@
 {
   "updated": "Nov 21, 2026 (sample data)",
   "deals": [
-    { "id": "mcd-5meal", "chain": "mcdonalds", "title": "$5 Meal Deal", "details": "McDouble or McChicken, 4 pc McNuggets, small fries and a small drink.", "price": "$5" },
-    { "id": "mcd-bogo", "chain": "mcdonalds", "title": "Buy one, get one for $1", "details": "Big Mac, Quarter Pounder or 10 pc McNuggets. Check Deals in the app.", "price": "BOGO", "appOnly": true },
-    { "id": "mcd-friesfri", "chain": "mcdonalds", "title": "Free Fries Friday", "details": "Free medium fries with any $1+ purchase.", "price": "FREE", "days": [6], "appOnly": true },
+    { "id": "mcd-5meal", "chain": "mcdonalds", "title": "$5 Meal Deal", "details": "McDouble or McChicken, 4 pc McNuggets, small fries and a small drink.", "price": "$5", "allergens": ["wheat", "milk", "soy"] },
+    { "id": "mcd-bogo", "chain": "mcdonalds", "title": "Buy one, get one for $1", "details": "Big Mac, Quarter Pounder or 10 pc McNuggets. Check Deals in the app.", "price": "BOGO", "appOnly": true, "allergens": ["wheat", "milk", "soy", "egg", "sesame"] },
+    { "id": "mcd-friesfri", "chain": "mcdonalds", "title": "Free Fries Friday", "details": "Free medium fries with any $1+ purchase.", "price": "FREE", "days": [6], "appOnly": true, "allergens": ["wheat", "milk"] },
+    { "id": "mcd-filet", "chain": "mcdonalds", "title": "2 for $6 Filet-O-Fish", "details": "Two fish sandwiches on Fridays.", "price": "2/$6", "days": [6], "allergens": ["fish", "wheat", "milk", "egg", "soy"] },
 
-    { "id": "wen-biggie", "chain": "wendys", "title": "Biggie Bag", "details": "Jr. Bacon Cheeseburger or Crispy Chicken, 4 pc nuggets, small fries and a drink.", "price": "$5" },
-    { "id": "wen-breakfast", "chain": "wendys", "title": "$3 Breakfast Deal", "details": "Breakfast sandwich and seasoned potatoes, before 10:30 am.", "price": "$3" },
-    { "id": "wen-frosty", "chain": "wendys", "title": "Weekend $1 Frosty", "details": "Any size Frosty for a buck with an app order.", "price": "$1", "days": [6, 7, 1], "appOnly": true },
+    { "id": "wen-biggie", "chain": "wendys", "title": "Biggie Bag", "details": "Jr. Bacon Cheeseburger or Crispy Chicken, 4 pc nuggets, small fries and a drink.", "price": "$5", "allergens": ["wheat", "milk", "soy", "egg"] },
+    { "id": "wen-breakfast", "chain": "wendys", "title": "$3 Breakfast Deal", "details": "Breakfast sandwich and seasoned potatoes, before 10:30 am.", "price": "$3", "allergens": ["wheat", "milk", "egg", "soy"] },
+    { "id": "wen-frosty", "chain": "wendys", "title": "Weekend $1 Frosty", "details": "Any size Frosty for a buck with an app order.", "price": "$1", "days": [6, 7, 1], "appOnly": true, "allergens": ["milk", "soy"] },
 
-    { "id": "bk-yourway", "chain": "burgerking", "title": "$5 Your Way Meal", "details": "Whopper Jr., Chicken Jr. or Bacon Cheeseburger with nuggets, fries and a drink.", "price": "$5" },
-    { "id": "bk-whopperwed", "chain": "burgerking", "title": "Whopper Wednesday", "details": "Whopper for $3 with any purchase.", "price": "$3", "days": [4], "appOnly": true },
-    { "id": "bk-sundaybogo", "chain": "burgerking", "title": "Sunday Whopper BOGO", "details": "Buy a Whopper, get a second one free.", "price": "BOGO", "days": [1], "appOnly": true },
+    { "id": "bk-yourway", "chain": "burgerking", "title": "$5 Your Way Meal", "details": "Whopper Jr., Chicken Jr. or Bacon Cheeseburger with nuggets, fries and a drink.", "price": "$5", "allergens": ["wheat", "milk", "soy", "egg", "sesame"] },
+    { "id": "bk-whopperwed", "chain": "burgerking", "title": "Whopper Wednesday", "details": "Whopper for $3 with any purchase.", "price": "$3", "days": [4], "appOnly": true, "allergens": ["wheat", "soy", "egg", "sesame"] },
+    { "id": "bk-sundaybogo", "chain": "burgerking", "title": "Sunday Whopper BOGO", "details": "Buy a Whopper, get a second one free.", "price": "BOGO", "days": [1], "appOnly": true, "allergens": ["wheat", "soy", "egg", "sesame"] },
 
-    { "id": "jitb-tacos", "chain": "jackinthebox", "title": "2 Tacos", "details": "The legendary crunchy tacos, all day.", "price": "$0.99" },
-    { "id": "jitb-munchie", "chain": "jackinthebox", "title": "Munchie Meal", "details": "Late-night combo with a sandwich, fries, 2 tacos and a drink. After 9 pm.", "price": "$6.99" },
-    { "id": "jitb-jumbo", "chain": "jackinthebox", "title": "Jumbo Jack Saturday", "details": "Jumbo Jack combo at a weekend price.", "price": "$5", "days": [7], "appOnly": true },
+    { "id": "jitb-tacos", "chain": "jackinthebox", "title": "2 Tacos", "details": "The legendary crunchy tacos, all day.", "price": "$0.99", "allergens": ["wheat", "milk", "soy"] },
+    { "id": "jitb-munchie", "chain": "jackinthebox", "title": "Munchie Meal", "details": "Late-night combo with a sandwich, fries, 2 tacos and a drink. After 9 pm.", "price": "$6.99", "allergens": ["wheat", "milk", "soy", "egg", "sesame"] },
+    { "id": "jitb-jumbo", "chain": "jackinthebox", "title": "Jumbo Jack Saturday", "details": "Jumbo Jack combo at a weekend price.", "price": "$5", "days": [7], "appOnly": true, "allergens": ["wheat", "milk", "soy", "egg", "sesame"] },
 
-    { "id": "arb-snack", "chain": "arbys", "title": "2 for $7 Classics", "details": "Mix and match Classic Beef 'n Cheddar or Classic Roast Beef.", "price": "2/$7" },
-    { "id": "arb-fries", "chain": "arbys", "title": "Free Curly Fries", "details": "Free small curly fries with any sandwich purchase.", "price": "FREE", "days": [1], "appOnly": true },
+    { "id": "wb-whatameal", "chain": "whataburger", "title": "Whatameal Deal", "details": "Jr. burger, small fries and a drink.", "price": "$5.99", "allergens": ["wheat", "milk", "soy", "egg", "sesame"] },
+    { "id": "cjr-bigdeal", "chain": "carlsjr", "title": "Big Deal", "details": "2 Famous Stars or Big Hamburgers.", "price": "2/$6", "allergens": ["wheat", "milk", "soy", "egg", "sesame"] },
+    { "id": "har-bigdeal", "chain": "hardees", "title": "Big Deal", "details": "2 Famous Stars or Big Hamburgers.", "price": "2/$6", "allergens": ["wheat", "milk", "soy", "egg", "sesame"] },
 
-    { "id": "tb-cravings", "chain": "tacobell", "title": "Cravings Value Menu", "details": "Over 10 items at $3 or less, including the Cheesy Roll Up and Beefy 5-Layer.", "price": "≤$3" },
-    { "id": "tb-luxe", "chain": "tacobell", "title": "Luxe Cravings Box", "details": "Chalupa, Beefy 5-Layer, Crunchy Taco, Chips & Nacho Cheese and a drink.", "price": "$7" },
-    { "id": "tb-tuesday", "chain": "tacobell", "title": "Taco Tuesday", "details": "Crunchy or soft tacos for $1 each.", "price": "$1", "days": [3] },
+    { "id": "son-happyhour", "chain": "sonic", "title": "Happy Hour", "details": "Half-price drinks and slushes, 2 – 4 pm.", "price": "½ OFF", "allergens": [] },
+    { "id": "son-corndog", "chain": "sonic", "title": "Corn Dog Night", "details": "Corn dogs for 50¢ after 5 pm.", "price": "$0.50", "days": [7], "allergens": ["wheat", "milk", "egg", "soy"] },
 
-    { "id": "pop-bigbox", "chain": "popeyes", "title": "$6 Big Box", "details": "2 pc chicken or 3 tenders with 2 regular sides and a biscuit.", "price": "$6" },
-    { "id": "pop-tuesday", "chain": "popeyes", "title": "2 pc Tuesday", "details": "2 pc signature chicken for a steal.", "price": "$2.99", "days": [3], "appOnly": true },
+    { "id": "dq-meal", "chain": "dairyqueen", "title": "$7 Meal Deal", "details": "Burger or 4 pc chicken strips, fries, a drink and a sundae.", "price": "$7", "allergens": ["wheat", "milk", "egg", "soy"] },
+    { "id": "dq-blizzard", "chain": "dairyqueen", "title": "Blizzard BOGO for 99¢", "details": "Buy any Blizzard, get a second for 99¢.", "price": "$0.99", "days": [2], "appOnly": true, "allergens": ["milk", "soy", "wheat", "egg", "peanut", "treenut"] },
 
-    { "id": "kfc-box", "chain": "kfc", "title": "$5 Chicken Sandwich Box", "details": "Chicken sandwich, side and a drink.", "price": "$5" },
-    { "id": "kfc-bucket", "chain": "kfc", "title": "Sunday Family Bucket", "details": "8 pc bucket with 2 large sides and 4 biscuits.", "price": "$20", "days": [1] },
+    { "id": "pop-bigbox", "chain": "popeyes", "title": "$6 Big Box", "details": "2 pc chicken or 3 tenders with 2 regular sides and a biscuit.", "price": "$6", "allergens": ["wheat", "milk", "egg", "soy"] },
+    { "id": "pop-tuesday", "chain": "popeyes", "title": "2 pc Tuesday", "details": "2 pc signature chicken for a steal.", "price": "$2.99", "days": [3], "appOnly": true, "allergens": ["wheat", "milk", "egg"] },
 
-    { "id": "son-happyhour", "chain": "sonic", "title": "Happy Hour", "details": "Half-price drinks and slushes, 2 – 4 pm.", "price": "½ OFF" },
-    { "id": "son-corndog", "chain": "sonic", "title": "Corn Dog Night", "details": "Corn dogs for 50¢ after 5 pm.", "price": "$0.50", "days": [7] },
+    { "id": "kfc-box", "chain": "kfc", "title": "$5 Chicken Sandwich Box", "details": "Chicken sandwich, side and a drink.", "price": "$5", "allergens": ["wheat", "milk", "egg", "soy"] },
+    { "id": "kfc-bucket", "chain": "kfc", "title": "Sunday Family Bucket", "details": "8 pc bucket with 2 large sides and 4 biscuits.", "price": "$20", "days": [1], "allergens": ["wheat", "milk", "egg", "soy"] },
 
     { "id": "cfa-rewards", "chain": "chickfila", "title": "Free item rewards", "details": "Earn points on every order; check Rewards for free nuggets or a drink.", "price": "PTS", "appOnly": true },
 
-    { "id": "dq-meal", "chain": "dairyqueen", "title": "$7 Meal Deal", "details": "Burger or 4 pc chicken strips, fries, a drink and a sundae.", "price": "$7" },
-    { "id": "dq-blizzard", "chain": "dairyqueen", "title": "Blizzard BOGO for 99¢", "details": "Buy any Blizzard, get a second for 99¢.", "price": "$0.99", "days": [2], "appOnly": true },
+    { "id": "rc-box", "chain": "raisingcanes", "title": "Box Combo", "details": "4 chicken fingers, crinkle fries, Texas toast, coleslaw, Cane's sauce and a drink.", "price": "$11.49", "allergens": ["wheat", "milk", "egg", "soy"] },
 
-    { "id": "wb-whatameal", "chain": "whataburger", "title": "Whatameal Deal", "details": "Jr. burger, small fries and a drink.", "price": "$5.99" },
+    { "id": "ws-wingwed", "chain": "wingstop", "title": "Wing Wednesday", "details": "Boneless wings at a discount when you order online.", "price": "75¢", "days": [4], "appOnly": true, "allergens": ["wheat", "milk", "soy", "egg"] },
 
-    { "id": "cjr-bigdeal", "chain": "carlsjr", "title": "Big Deal", "details": "2 Famous Stars or Big Hamburgers.", "price": "2/$6" },
-    { "id": "har-bigdeal", "chain": "hardees", "title": "Big Deal", "details": "2 Famous Stars or Big Hamburgers.", "price": "2/$6" },
+    { "id": "tb-cravings", "chain": "tacobell", "title": "Cravings Value Menu", "details": "Over 10 items at $3 or less, including the Cheesy Roll Up and Beefy 5-Layer.", "price": "≤$3", "allergens": ["wheat", "milk", "soy"] },
+    { "id": "tb-luxe", "chain": "tacobell", "title": "Luxe Cravings Box", "details": "Chalupa, Beefy 5-Layer, Crunchy Taco, Chips & Nacho Cheese and a drink.", "price": "$7", "allergens": ["wheat", "milk", "soy", "egg"] },
+    { "id": "tb-tuesday", "chain": "tacobell", "title": "Taco Tuesday", "details": "Crunchy or soft tacos for $1 each.", "price": "$1", "days": [3], "allergens": ["wheat", "milk"] },
 
-    { "id": "sub-footlong", "chain": "subway", "title": "$6.99 Footlong", "details": "Select footlongs with promo code in the app.", "price": "$6.99", "appOnly": true },
+    { "id": "dt-dollar", "chain": "deltaco", "title": "Del's Dollar Deals", "details": "Tacos, bean & cheese burritos and more for $1–2.", "price": "$1+", "allergens": ["wheat", "milk"] },
 
-    { "id": "dom-mixmatch", "chain": "dominos", "title": "Mix & Match", "details": "Any 2 or more: medium 2-topping pizza, wings, pasta, sandwiches and more.", "price": "$6.99" },
-    { "id": "dom-carryout", "chain": "dominos", "title": "Carryout Large", "details": "Large 3-topping pizza, carryout only.", "price": "$7.99" },
+    { "id": "chi-chipsguac", "chain": "chipotle", "title": "Chips & Guac", "details": "Fresh tortilla chips with a side of guacamole.", "price": "$4.25", "allergens": [] },
+    { "id": "chi-tuesday", "chain": "chipotle", "title": "Free Guac Tuesday", "details": "Free guacamole on any entrée ordered in the app.", "price": "FREE", "days": [3], "appOnly": true },
 
-    { "id": "ph-dealmenu", "chain": "pizzahut", "title": "Deal Lover's Menu", "details": "Pick from medium pizzas, wings, pasta and sides.", "price": "$7" },
+    { "id": "qd-tacos", "chain": "qdoba", "title": "3 Tacos for $5", "details": "Pick your protein, toppings included.", "price": "$5", "days": [3], "allergens": ["wheat", "milk"] },
+    { "id": "qd-queso", "chain": "qdoba", "title": "Free queso & guac", "details": "Queso and guac are included on every entrée at no extra charge.", "price": "FREE" },
 
-    { "id": "lc-classic", "chain": "littlecaesars", "title": "Hot-N-Ready Classic", "details": "Large pepperoni or cheese, ready when you walk in.", "price": "$6.99" },
+    { "id": "moe-monday", "chain": "moes", "title": "Moe Monday", "details": "Homewrecker burrito at a Monday-only price.", "price": "$6.99", "days": [2], "allergens": ["wheat", "milk", "soy"] },
+    { "id": "moe-chips", "chain": "moes", "title": "Free chips & salsa", "details": "Every meal comes with free chips and the salsa bar.", "price": "FREE", "allergens": [] },
 
-    { "id": "dt-dollar", "chain": "deltaco", "title": "Del's Dollar Deals", "details": "Tacos, bean & cheese burritos and more for $1–2.", "price": "$1+" },
+    { "id": "epl-burrito", "chain": "elpolloloco", "title": "$5 Chicken Burrito Meal", "details": "Fire-grilled chicken burrito, chips and a drink.", "price": "$5", "allergens": ["wheat", "milk", "soy"] },
+    { "id": "epl-family", "chain": "elpolloloco", "title": "Sunday Family Meal", "details": "12 pc fire-grilled chicken, 2 large sides, tortillas and salsa.", "price": "$25", "days": [1], "allergens": ["wheat", "milk", "soy"] },
 
-    { "id": "ws-wingwed", "chain": "wingstop", "title": "Wing Wednesday", "details": "Boneless wings at a discount when you order online.", "price": "75¢", "days": [4], "appOnly": true }
+    { "id": "dom-mixmatch", "chain": "dominos", "title": "Mix & Match", "details": "Any 2 or more: medium 2-topping pizza, wings, pasta, sandwiches and more.", "price": "$6.99", "allergens": ["wheat", "milk", "soy", "egg"] },
+    { "id": "dom-carryout", "chain": "dominos", "title": "Carryout Large", "details": "Large 3-topping pizza, carryout only.", "price": "$7.99", "allergens": ["wheat", "milk", "soy"] },
+
+    { "id": "ph-dealmenu", "chain": "pizzahut", "title": "Deal Lover's Menu", "details": "Pick from medium pizzas, wings, pasta and sides.", "price": "$7", "allergens": ["wheat", "milk", "soy"] },
+
+    { "id": "lc-classic", "chain": "littlecaesars", "title": "Hot-N-Ready Classic", "details": "Large pepperoni or cheese, ready when you walk in.", "price": "$6.99", "allergens": ["wheat", "milk"] },
+
+    { "id": "pj-pairings", "chain": "papajohns", "title": "Papa Pairings", "details": "Pick 2 or more: medium 1-topping pizza, Papadia, wings or sides.", "price": "$6.99", "allergens": ["wheat", "milk", "soy"] },
+    { "id": "pj-tuesday", "chain": "papajohns", "title": "Large 1-Topping Tuesday", "details": "Any large 1-topping pizza, online orders.", "price": "$9.99", "days": [3], "appOnly": true, "allergens": ["wheat", "milk", "soy"] },
+
+    { "id": "faz-alfredo", "chain": "fazolis", "title": "Fettuccine Alfredo Deal", "details": "Fettuccine Alfredo with unlimited breadsticks.", "price": "$5.99", "allergens": ["wheat", "milk", "egg", "soy"] },
+
+    { "id": "sb-slice", "chain": "sbarro", "title": "Slice + Drink", "details": "Any XL cheese or pepperoni slice and a fountain drink.", "price": "$6.99", "allergens": ["wheat", "milk", "soy"] },
+
+    { "id": "px-bowl", "chain": "pandaexpress", "title": "Bowl Deal", "details": "One entrée like Orange Chicken plus one side.", "price": "$7.99", "allergens": ["wheat", "soy", "egg", "sesame"] },
+    { "id": "px-family", "chain": "pandaexpress", "title": "Weekend Family Meal", "details": "$5 off the family meal on online orders, Friday through Sunday.", "price": "$5 OFF", "days": [6, 7, 1], "appOnly": true, "allergens": ["wheat", "soy", "egg", "sesame"] },
+
+    { "id": "pw-wok", "chain": "peiwei", "title": "Wok Wednesday", "details": "Any regular wok bowl for $8.", "price": "$8", "days": [4], "allergens": ["wheat", "soy", "egg", "sesame"] },
+
+    { "id": "pus-lunch", "chain": "pickupstix", "title": "Lunch Combo", "details": "2 entrées and fried rice or chow mein, until 3 pm.", "price": "$8.99", "allergens": ["wheat", "soy", "egg"] },
+
+    { "id": "cava-pita", "chain": "cava", "title": "Pita Chips & Dip", "details": "Pita chips with hummus, crazy feta or tzatziki.", "price": "$4.25", "allergens": ["wheat", "sesame", "milk"] },
+    { "id": "cava-thursday", "chain": "cava", "title": "Free drink with any bowl", "details": "App orders on Thursdays.", "price": "FREE", "days": [5], "appOnly": true },
+
+    { "id": "taz-gyro", "chain": "tazikis", "title": "Gyro Lunch Special", "details": "Gyro wrap with a side, before 3 pm.", "price": "$9.99", "allergens": ["wheat", "milk", "soy"] },
+
+    { "id": "hg-platter", "chain": "halalguys", "title": "Small Platter", "details": "Chicken, beef gyro or combo over rice with white and hot sauce.", "price": "$9.49", "allergens": ["wheat", "egg", "soy"] },
+
+    { "id": "yo-beef", "chain": "yoshinoya", "title": "Beef Bowl", "details": "Classic regular beef bowl over steamed rice.", "price": "$5.99", "allergens": ["wheat", "soy", "sesame"] },
+    { "id": "yo-teriyaki", "chain": "yoshinoya", "title": "Teriyaki Chicken Tuesday", "details": "Regular teriyaki chicken bowl at a Tuesday price.", "price": "$5.49", "days": [3], "allergens": ["wheat", "soy"] },
+
+    { "id": "tm-bowl", "chain": "teriyakimadness", "title": "$2 off Teriyaki Bowl", "details": "Any regular chicken teriyaki bowl, ordered in the app.", "price": "$2 OFF", "appOnly": true, "allergens": ["wheat", "soy", "sesame"] },
+
+    { "id": "sub-footlong", "chain": "subway", "title": "$6.99 Footlong", "details": "Select footlongs with promo code in the app.", "price": "$6.99", "appOnly": true, "allergens": ["wheat", "soy", "milk", "egg"] },
+
+    { "id": "arb-snack", "chain": "arbys", "title": "2 for $7 Classics", "details": "Mix and match Classic Beef 'n Cheddar or Classic Roast Beef.", "price": "2/$7", "allergens": ["wheat", "milk", "soy", "egg"] },
+    { "id": "arb-fries", "chain": "arbys", "title": "Free Curly Fries", "details": "Free small curly fries with any sandwich purchase.", "price": "FREE", "days": [1], "appOnly": true, "allergens": ["wheat", "soy"] },
+
+    { "id": "jm-combo", "chain": "jerseymikes", "title": "Mini Sub Combo", "details": "Mini sub, chips and a drink.", "price": "$9.99", "allergens": ["wheat", "milk", "soy"] },
+
+    { "id": "jj-slim", "chain": "jimmyjohns", "title": "$6 Slims", "details": "Any Slim sandwich for $6 with Freaky Fast Rewards.", "price": "$6", "appOnly": true, "allergens": ["wheat", "soy", "milk"] }
   ]
 }
